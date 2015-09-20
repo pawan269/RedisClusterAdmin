@@ -10,6 +10,7 @@ A PHP / jQuery Opensource for managing Redis Cluster key-values
     $redis->connect('127.0.0.1');
 
     Uncomment line below for cluster redis connection
+    
     //$redis = new RedisCluster(NULL, array(
     //    '172.16.1.31:6379',
     //    '172.16.1.32:6379',
