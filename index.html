@@ -1,6 +1,3 @@
-<?php
-require_once 'config.php';
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,9 +15,9 @@ require_once 'config.php';
                 });
 
             }
-            function getValue(v, t) {
+            function getValues(v, t) {
                 $("#result").html('Loading...');
-                $.get("getValue.php", {v: v, t: t}, function (data) {
+                $.get("getValues.php", {v: v, t: t}, function (data) {
                     $("#result").html(data);
                 });
             }
